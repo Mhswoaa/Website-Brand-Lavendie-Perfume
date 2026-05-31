@@ -26,6 +26,9 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 body {
   background-color: var(--bg-color);
@@ -33,6 +36,8 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* SCROLLBAR */
@@ -309,8 +314,6 @@ header.scrolled {
   margin-bottom: 40px;
   max-width: 500px;
 }
-
-/* MARQUEE */
 .marquee-wrapper {
   background: var(--text-main);
   color: var(--bg-color);
@@ -320,10 +323,11 @@ header.scrolled {
   display: flex;
   border-top: 2px solid var(--bg-color);
   border-bottom: 2px solid var(--bg-color);
+  width: 100%;
+  max-width: 100%;
 }
 .marquee {
   display: flex;
-  animation: scroll-left 15s linear infinite;
 }
 .marquee span {
   font-family: var(--font-heading);
@@ -649,10 +653,11 @@ footer {
   .hero-title {
     font-size: clamp(3rem, 12vw, 5rem);
     margin-bottom: 16px;
+     word-break: break-word;
+    overflow-wrap: break-word;
   }
   .footer-title {
     font-size: 2.5rem;
-    margin-bottom: 24px;
   }
   .btn {
     padding: 14px 24px;
