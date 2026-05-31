@@ -638,3 +638,63 @@ footer {
 .gallery-wrap:hover img {
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 30px;
+  }
+  .hero-title {
+    font-size: clamp(3rem, 12vw, 5rem);
+    margin-bottom: 16px;
+  }
+  .footer-title {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  .btn {
+    padding: 14px 24px;
+    font-size: 0.8rem;
+  }
+  .product-detail-hero {
+    padding-top: 80px;
+    gap: 24px;
+    min-height: auto;
+  }
+  .pd-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 16px;
+  }
+  .pd-image-wrapper {
+    height: 50vh;
+  }
+  .pd-specs {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    margin: 0 0 24px 0;
+  }
+  .pd-notes {
+    margin-top: 60px;
+  }
+  .notes-container {
+    margin: 30px auto 20px;
+  }
+  .note-box {
+    padding: 24px 16px;
+  }
+  .product-gallery {
+    margin: 60px 0;
+  }
+  .gallery-grid {
+    gap: 16px;
+  }
+  .gallery-wrap img {
+    height: 300px;
+  }
+  footer {
+    padding: 60px 0 30px;
+  }
+}
